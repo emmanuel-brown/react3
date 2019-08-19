@@ -1,0 +1,15 @@
+
+.comment{
+    display: flex;
+    &_txt{
+        flex-basis: 90%;
+        p{
+            max-width: 20rem;
+            word-wrap: break-word;
+        }
+    }
+    span{
+        text-align: right;
+        padding: 0px 1px;
+    }
+}

@@ -1,0 +1,33 @@
+@import './navbar.scss';
+@import './comment.scss';
+@import './inputer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: palegreen;
+}
+
+@media only screen and (min-width: 0px){
+    
+}
+
+@media only screen and (min-width: 700px){
+    .App{
+       position: absolute;
+       background-color: orangered;
+       width: 32rem;
+       height: 80vh;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       border-radius: 14%;
+       overflow: scroll;
+       .container{
+           padding: 5% 5%;
+       }
+    }
+}
