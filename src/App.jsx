@@ -4,7 +4,6 @@ import Inputer from './Components/Inputer'
 import Comment from './Components/Comment'
 import Navbar from './Components/Navbar'
 
-
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -100,8 +99,8 @@ class App extends React.Component {
         <div className="App">
           <main className="container">
             {displayMsg}
-          </main>
             <Inputer click={this.inputer}/>
+          </main>
         </div>
       </React.Fragment>
     );

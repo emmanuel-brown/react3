@@ -1,33 +1,91 @@
-@import './navbar.scss';
-@import './comment.scss';
-@import './inputer.scss';
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
 }
 
 body{
-    background-color: palegreen;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #3D5A6C;
 }
-
 @media only screen and (min-width: 0px){
-    
+    #Header{
+        background-color: #3D5A6C;
+        color: #8DE969;
+        text-align: center;
+        .stats{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .comment{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        &_txt{
+            width: 80%;
+            word-wrap: break-word;
+            p{
+                background-color: #8DE969;
+                padding-left: 4px;
+                border: 1px solid #433A3F;
+                border-top-right-radius: 3% 24%;
+                border-bottom-right-radius: 3% 24%;
+                border-left: none;
+            }
+        }
+        .buttons{
+            span{
+                padding-left: 3px;
+            }
+        }
+    }
+
+    .userInput{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        &_textBox{
+            width: 89%;
+        }
+        &_button{
+            background-color: #3D5A6C;
+            color: #8DE969;
+            width: 21%;
+        }
+    }
 }
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 768px){
     .App{
-       position: absolute;
-       background-color: orangered;
-       width: 32rem;
-       height: 80vh;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       border-radius: 14%;
-       overflow: scroll;
-       .container{
-           padding: 5% 5%;
-       }
+        background-color: gray;
+        margin: 50px auto;
+        width: 450px;
+        height: 600px;
+        overflow: scroll;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        .container{
+            position: relative;
+            height: 100%;
+            .comment{
+                .stats{
+                    display: block;
+                    text-align: center;
+                }
+            }
+            .userInput{
+                transform: translateY(-900%);
+                width: 450px;
+                bottom: 0;
+            }
+        }
     }
 }
