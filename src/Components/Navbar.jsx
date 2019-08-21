@@ -8,7 +8,7 @@ const Navbar = (props) =>{
             </header>
             <ul className="stats">
                 <li>Likes: {props.numOfLikes}</li>
-                <li>DisLikes: {props.numOfDislikes}</li>
+                <li>Dislikes: {props.numOfDislikes}</li>
             </ul>
         </nav>
     )
