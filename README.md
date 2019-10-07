@@ -1,6 +1,6 @@
-#### React Comment box
+### React Comment box
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a demonstrations on how to create and like messages use React and SCSS.
 
 ## Available Scripts
 
