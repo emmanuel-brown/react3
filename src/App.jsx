@@ -12,14 +12,14 @@ class App extends React.Component {
       comments: [
         {
           user: "Jackson",
-          comment: "I believe that heavenly father cares about us",
+          comment: "I like to put the peanut butter before the jelly",
           like: true,
           dislike: false,
           numOfLikes: 0,
           numOfDislike: 0
         },
         {
-          user: "Kendall",
+          user: "Anthony",
           comment: "Me too",
           like: false,
           dislike: false,
